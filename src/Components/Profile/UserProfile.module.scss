@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #1f2937;
+  padding: 24px;
+  color: #f3f4f6;
+  width: 100%;
+}
+
+.userBox {
+  background-color: #2d3748;
+  border-radius: 8px;
+}
+
+.referralsBox {
+  background-color: #2d3748;
+  border-radius: 8px;
+  min-width: 500px;
+  flex: 1 1 auto;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.label {
+  width: 80px;
+  color: #a0aec0;
+}
+
+.value {
+  flex: 1;
+  color: #4a5568;
+}
+
+.referralList {
+  margin-top: 16px;
+}
+
+.referralItem {
+  margin-bottom: 8px;
+  background-color: #4a5568;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.referralLabel {
+  font-weight: bold;
+  color: #a0aec0;
+}
+
+.referralValue {
+  color: #f3f4f6;
+}
