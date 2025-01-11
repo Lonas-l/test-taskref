@@ -9205,7 +9205,7 @@ function processRoutes(routes, context, manifest, routeModules, parentId) {
       hasLoader: route.loader != null,
       // When testing routes, you should just be stubbing loader/action, not
       // trying to re-implement the full loader/clientLoader/SSR/hydration flow.
-      // That is better tested via E2E tests.
+      // That is better tested via E2E e2e.
       hasClientAction: false,
       hasClientLoader: false,
       hasErrorBoundary: route.ErrorBoundary != null,

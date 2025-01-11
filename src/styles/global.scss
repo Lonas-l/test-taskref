@@ -1,4 +1,4 @@
-@import 'scss-reset';
+@use 'scss-reset';
 
 body {
   display: flex;
@@ -10,4 +10,3 @@ body {
   font-family: Arial, sans-serif;
   width: 100%;
 }
-

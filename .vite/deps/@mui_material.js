@@ -11441,7 +11441,7 @@ var {
   getInitColorSchemeScript: deprecatedGetInitColorSchemeScript
 } = createCssVarsProvider({
   themeId: identifier_default,
-  // @ts-ignore ignore module augmentation tests
+  // @ts-ignore ignore module augmentation e2e
   theme: () => createTheme2({
     cssVariables: true
   }),

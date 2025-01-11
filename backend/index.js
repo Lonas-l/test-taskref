@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const PORT = process.env.PORT || 8081;
 const mongoose = require('mongoose');
@@ -11,7 +13,7 @@ app.use("/auth", authRoutes);
 
 const start = async () => {
     try {
-        await mongoose.connect('mongodb+srv://admin:admin@cluster0.llaxm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+        await mongoose.connect(process.env.MONGO_CLUSTER)
         app.listen(PORT, () => console.log(`Server is started on port ${PORT}`))
     } catch (e) {
         console.log(e)

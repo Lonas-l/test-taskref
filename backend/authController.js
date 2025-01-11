@@ -115,6 +115,19 @@ class authController {
             return res.status(400).json({ message: 'Error fetching user' });
         }
     }
+
+    async getUser(req, res)  {
+        try {
+            const currentUser = await User.findById(req.user.id);
+            if (!currentUser) {
+                return res.status(404).json({ message: "User doesn't find" });
+            }
+            res.json(currentUser);
+        } catch (error) {
+            console.error('Error fetching user:', error);
+            res.status(500).json({ message: 'Error fetching user' });
+        }
+    }
 }
 
 module.exports = new authController();
